@@ -6,7 +6,13 @@
         xmlns:local="clr-namespace:BotClient"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <Grid Height="389" VerticalAlignment="Top">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="6*"/>
+            <ColumnDefinition Width="19*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="tokenTextBox" HorizontalAlignment="Left" Margin="117,0,0,0" Text="Token" TextWrapping="Wrap" VerticalAlignment="Center" Width="370" TextChanged="textBox_TextChanged" RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="2"/>
+        <Button x:Name="button" Content="Login" HorizontalAlignment="Left" Margin="321,208,0,0" VerticalAlignment="Top" Click="button_Click" Height="23" Width="54" Grid.Column="1"/>
 
     </Grid>
 </Window>

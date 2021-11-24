@@ -24,5 +24,28 @@ namespace BotClient
         {
             InitializeComponent();
         }
+
+        private void textBox_TextChanged(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            var text = tokenTextBox.Text;
+            if (text == "Token")
+            {
+                text = "no";
+                return; // No
+            }
+            if (text.StartsWith("mfa."))
+            {
+                text = "You can't use a user token!";
+                return;
+            }
+            var mainPage = new MainPage(text);
+            mainPage.Show();
+            this.Close();
+        }
     }
 }
