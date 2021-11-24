@@ -32,7 +32,7 @@ namespace BotClient
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            var text = tokenTextBox.Text;
+            string? text = tokenTextBox.Text;
             if (text == "Token")
             {
                 text = "no";
@@ -43,7 +43,7 @@ namespace BotClient
                 text = "You can't use a user token!";
                 return;
             }
-            var mainPage = new MainPage(text);
+            MainPage? mainPage = new MainPage(text);
             mainPage.Show();
             this.Close();
         }
