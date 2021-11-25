@@ -23,6 +23,7 @@ namespace BotClient
         public MainWindow()
         {
             InitializeComponent();
+            this.Title = "Login";
         }
 
         private void textBox_TextChanged(object sender, RoutedEventArgs e)

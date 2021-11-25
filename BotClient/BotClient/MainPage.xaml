@@ -15,7 +15,7 @@
         <ComboBox x:Name="serverList" HorizontalAlignment="Left" Margin="180,10,0,0" VerticalAlignment="Top" Width="172" Grid.Column="1"/>
         <ComboBox x:Name="channelList" Grid.Column="1" HorizontalAlignment="Left" Margin="357,10,0,0" VerticalAlignment="Top" Width="180"/>
         <Button x:Name="reloadButton" Content="Reload" Grid.Column="1" HorizontalAlignment="Left" Margin="542,10,0,0" VerticalAlignment="Top" Height="22" Width="49"/>
-        <TextBox x:Name="messageBox" HorizontalAlignment="Left" Margin="10,388,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="675" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="messageBox" HorizontalAlignment="Left" Margin="10,386,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="675" Grid.ColumnSpan="2" Height="20"/>
         <Button x:Name="sendMessageButton" Content="Send Message" Grid.Column="1" HorizontalAlignment="Left" Margin="491,386,0,0" VerticalAlignment="Top" Width="100"/>
         <TextBox x:Name="messagesBox" HorizontalAlignment="Left" Margin="10,37,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="756" Grid.ColumnSpan="2" Height="344" HorizontalScrollBarVisibility="Auto" IsReadOnly="True" VerticalScrollBarVisibility="Visible"/>
 
