@@ -65,6 +65,8 @@ namespace BotClient
             // get guilds
             guilds = discord.Guilds;
 
+            textBox.Text = $"In {guilds.Count} guilds!";
+
             foreach (KeyValuePair<ulong, DSharpPlus.Entities.DiscordGuild> guild in guilds)
             {
                 serverList.Items.Add(guild.Value.Name);
